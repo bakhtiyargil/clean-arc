@@ -1,2 +1,2 @@
-# clean-arc
+# clean-arch
 Clean Architecture nonsense
