@@ -5,17 +5,19 @@ import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Merchant {
 
-    String id;
+    Integer id;
     String name;
     String address;
     String phone;
     String email;
     String website;
     LocalDateTime joinedAt;
+    List<Product> products;
 
 }
