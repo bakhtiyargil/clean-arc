@@ -4,21 +4,19 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Product {
 
-    String id;
+    Integer id;
     String name;
     String description;
-    String price;
-    String image;
-    String merchantId;
+    BigDecimal price;
+    String imageUrl;
     LocalDateTime createdAt;
+    Merchant merchant;
 
-    public void attachToMerchant(Merchant merchant) {
-        this.merchantId = merchant.getId();
-    }
 }

@@ -1,9 +1,9 @@
 package az.baxtiyargil.cleanarch.application.port.out;
 
-import az.baxtiyargil.cleanarch.application.domain.model.Merchant;
+import az.baxtiyargil.cleanarch.adapter.out.MerchantJpaEntity;
 
 public interface LoadMerchantPort {
 
-    Merchant loadMerchantById(String merchantId);
+    MerchantJpaEntity loadMerchantById(String merchantId);
 
 }

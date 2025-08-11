@@ -1,0 +1,2 @@
+curl --location --request POST 'http://localhost:8080/merchants/1/products/111' \
+--header 'Cookie: JSESSIONID=9A2B22C43825F61E37EB8D6DB63DBA3D'
